@@ -1,0 +1,69 @@
+.message{
+    display: flex;
+    flex-direction: column;
+}
+
+.ownmessage{
+    justify-content: flex-end;
+    margin: 4px 18px 4px 12px;
+    align-items: flex-end;
+}
+
+.botmessage{
+    justify-content: flex-start;
+    margin: 4px 12px;
+    align-items: flex-start;
+}
+
+.message-bubble{
+    max-width: 65%;
+    padding: 10px 14px;
+    border-radius: 18px;
+}
+
+.message-time{
+    color: rgb(0 0 0 / 60%);
+    font-size: small;
+}
+
+.message-user{
+    font-size: small;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.ownmessage .message-bubble{
+    background-color: #2563eb;
+    color: white;
+}
+
+.botmessage .message-bubble{
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+.ownmessage .message-bubble .message-time{
+    color: rgba(255,255,255,0.4);
+}
+
+.botmessage .message-time{
+    color: rgba(255,255,255,0.4);
+}
+
+.copy-button{
+    transition: opacity 0.2s ease;
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: small;
+    padding: 4px 8px;
+    opacity: 0;
+}
+.botmessage:hover .copy-button,.ownmessage:hover .copy-button{
+    opacity: 1;
+}
+
+.message-content p {
+    margin: 0;
+}

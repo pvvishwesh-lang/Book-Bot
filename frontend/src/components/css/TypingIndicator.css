@@ -1,0 +1,5 @@
+.typing-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin: 4px 12px;
+}

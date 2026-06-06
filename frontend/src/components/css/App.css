@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.chat-window{
+    flex: 1;
+    overflow:hidden;
+}
+
+.input-bar{
+    background-color: #1e1e1e;
+    color: white;
+    border-top: 1px solid #333;
+    flex-shrink: 0;
+}
+
+body{
+    background-color:#111111;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
